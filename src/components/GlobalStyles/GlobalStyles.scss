@@ -1,0 +1,17 @@
+@import 'normalize.css';
+
+// Font TIktok đang dùng:
+
+// Proxima Nova
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+// Sofia Pro
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
