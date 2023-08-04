@@ -1,0 +1,22 @@
+.wrapper {
+    height: var(--header-height);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo {
+    width: 30%;
+    text-align: left;
+}
+
+.search {
+    width: 40%;
+    text-align: center;
+}
+
+.account {
+    width: 30%;
+    text-align: right;
+}

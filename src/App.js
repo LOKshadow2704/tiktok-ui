@@ -9,9 +9,9 @@ function App() {
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         if (route.layout === null) {
-                            var Layout = HeaderOnly;
-                        } else if (route.layout !== null && route.layout !== undefined) {
                             var Layout = Fragment;
+                        } else if (route.layout !== null && route.layout !== undefined) {
+                            var Layout = HeaderOnly;
                         } else {
                             var Layout = DefaultLayout;
                         }
