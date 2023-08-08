@@ -1,3 +1,4 @@
+import React from 'react';
 import Styles from './defaultLayout.module.scss';
 import Header from '../components/Header';
 import Sidebar from './Sidebar';

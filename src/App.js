@@ -1,13 +1,14 @@
+import React from 'react';
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes, privateRoutes } from '~/routes';
+import { PublicRoutes, PrivateRoutes } from '~/routes';
 import { DefaultLayout, HeaderOnly } from '~/components/Layout';
 function App() {
     return (
         <Router>
             <div className="App">
                 <Routes>
-                    {publicRoutes.map((route, index) => {
+                    {PublicRoutes.map((route, index) => {
                         if (route.layout === null) {
                             var Layout = Fragment;
                         } else if (route.layout !== null && route.layout !== undefined) {

@@ -5,18 +5,66 @@
     align-items: center;
     padding: 0 24px;
 }
-
 .logo {
     width: 30%;
-    text-align: left;
 }
-
 .search {
-    width: 40%;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    min-width: 300px;
     text-align: center;
+    height: 46px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid transparent;
+    border-radius: 92px;
+    position: relative;
+    input {
+        height: 21px;
+        background-color: transparent;
+        flex: 1;
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    span {
+        width: 1px;
+        height: 28px;
+        margin: -3px 0;
+        background: rgba(22, 24, 35, 0.12);
+    }
+    button {
+        width: 52px;
+        height: 100%;
+        border-top-right-radius: 92px;
+        border-bottom-right-radius: 92px;
+        font-size: 24px;
+        padding: 0 45px 0 16px;
+        color: rgba(22, 24, 35, 0.75);
+        &:hover {
+            color: rgba(22, 24, 35, 1);
+            background: rgba(22, 24, 35, 0.06);
+        }
+    }
+    .loading,
+    .delete {
+        position: absolute;
+        right: 72px;
+        color: rgba(22, 24, 35, 0.34);
+    }
+    &:focus-within {
+        border: 1px solid rgba(22, 24, 35, 0.2);
+    }
+    input:not(:placeholder-shown) ~ button {
+        color: rgba(22, 24, 35, 1) !important;
+    }
 }
 
 .account {
     width: 30%;
     text-align: right;
+}
+
+.button-clear {
+    border-radius: 50%;
 }

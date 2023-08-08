@@ -6,7 +6,7 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 
-const publicRoutes = [
+const PublicRoutes = [
     { path: '/', component: Home },
     { path: '/following', component: Following },
     { path: '/frofile', component: Profile },
@@ -14,6 +14,6 @@ const publicRoutes = [
     { path: '/search', component: Search, layout: null },
 ];
 
-const privateRoutes = [];
+const PrivateRoutes = [];
 
-export { publicRoutes, privateRoutes };
+export { PublicRoutes, PrivateRoutes };
