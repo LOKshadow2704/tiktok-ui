@@ -1,0 +1,25 @@
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 15px 0 15px 15px;
+    img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+        cursor: pointer;
+    }
+}
+.userInfo {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 10px;
+
+    .blueCheck {
+        margin-left: 10px;
+        color: rgba(32, 213, 236, 1);
+    }
+}

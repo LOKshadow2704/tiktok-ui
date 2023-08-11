@@ -64,7 +64,17 @@
     width: 30%;
     text-align: right;
 }
-
-.button-clear {
-    border-radius: 50%;
+.result {
+    box-sizing: border-box;
+    width: 30vw;
+    .resultTitle {
+        padding-top: 15px !important;
+        height: 30px;
+        padding: 5px 12px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.093px;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 0.5);
+    }
 }
